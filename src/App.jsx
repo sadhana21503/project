@@ -1,26 +1,26 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import SplashScreen from './components/SplashScreen';
-import Login from './pages/Login';
-import Home from './pages/Home';
+import SplashScreen from './components/splashscreen/SplashScreen';
+import Login from './pages/login/Login';
+import Home from './pages/home/Home';
 import PrivateRoute from './components/PrivateRoute';
-import Register from './components/Register';
-import NotificationPage from './pages/NotificationPage';
-import BookingPage from './pages/BookingPage'; 
-import ServicesPage from './pages/ServicesPage';
-import ProfilePage from './pages/ProfilePage'; 
-import EditLocationPage from './pages/EditLocation';
-import ProfileDrawer from './components/ProfileDrawer';
-import SettingsPage from './pages/SettingPage';
-import FuelPrice from './components/FuelPrice';
-import VehicleDetails from './components/VehicleDetails';
-import Book from './components/Book';
+import Register from './components/register/Register';
+import NotificationPage from './pages/notificationpage/NotificationPage';
+import BookingPage from './pages/Bookingpage/BookingPage'; 
+import ServicesPage from './pages/servicespage/ServicesPage';
+import ProfilePage from './pages/profilepage/ProfilePage'; 
+import EditLocationPage from './pages/editlocationpage/EditLocation';
+import ProfileDrawer from './components/profileDrawer/ProfileDrawer';
+import SettingsPage from './pages/settingspage/SettingPage';
+import FuelPrice from './components/fuelprice/FuelPrice';
+import VehicleDetails from './components/vehicledetails/VehicleDetails';
+import Book from './components/books/Book';
 
 const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<SplashScreen />} />
+        <Route path="/" element={<SplashScreen/>} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/home" element={<PrivateRoute><Home /></PrivateRoute>} />

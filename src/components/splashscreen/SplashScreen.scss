@@ -1,0 +1,13 @@
+.splash-screen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #e2e8f0; // Equivalent to bg-gray-200 in Tailwind CSS
+  }
+  
+  .splash-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
